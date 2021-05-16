@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MyLibrary.Book">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgIAAAISAAAQEAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Book.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyLibrary.Catalog">
+    <Position X="2" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAEAAAAAAAAAAECAAAAACAAAAAA=</HashCode>
+      <FileName>Catalog.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catalog" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MyLibrary.Storage">
+    <Position X="1.5" Y="5.25" Width="3" />
+    <InheritanceLine Type="MyLibrary.Catalog" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="3" Y="3.43" />
+        <Point X="3" Y="4.377" />
+        <Point X="3" Y="4.377" />
+        <Point X="3" Y="5.25" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="Recently_deleted_books" Type="MyLibrary.Book" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.156" Y="5.25" />
+        <Point X="4.156" Y="3.125" />
+        <Point X="7" Y="3.125" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAQAACAAAEAIQgACAIAAAAAAACAAIAIAAAAA=</HashCode>
+      <FileName>Storage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="Recently_deleted_books" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MyLibrary.Reader">
+    <Position X="7" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IAAIACAACAAAAAAQAAAEgAQABAAEAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Reader.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="list_books" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MyLibrary.Form">
+    <Position X="9.75" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAIAAAEAAAAAAABAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Form.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="reader_list" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
